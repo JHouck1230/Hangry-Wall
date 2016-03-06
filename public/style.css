@@ -1,0 +1,27 @@
+ .post {
+ 	border: 1px solid black;
+ }
+
+#template {
+	display: none;
+}
+
+.buttons {
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+}
+
+.remove, .like {
+    margin: 9px 5px 0px 5px;
+}
+
+#newRantBox {
+	margin-left: 200px;
+}
+
+.jumbotron {
+  display: flex;
+}

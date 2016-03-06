@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hangry Wall</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<body>
+			<div class="jumbotron">
+			  <h1>Hangry Wall</h1>
+				<textarea id="newRantBox" cols="100" rows="10"></textarea>
+				<button class="btn btn-info">Submit</button>
+			</div>
+		<div id='forum' class="container">
+			<div id='template' class="post row">
+				<div class="header col-xs-11 col-sm-11 col-md-11 col-lg-11">
+					<div class="row">
+						<div class="author col-xs-8 col-sm-8 col-md-8 col-lg-8"></div>
+						<div class="time col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+					</div>
+					<div class="row">
+						<div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+					</div>
+				</div>
+					<div class="buttons col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<button class="like btn btn-primary btn-xs"><span class="glyphicon glyphicon-thumbs-up"></span></button><button class="remove btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>
