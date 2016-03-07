@@ -1,9 +1,20 @@
- .post {
- 	border: 1px solid black;
- }
+.post {
+	border: 1px solid black;
+	min-height: 100px;
+}
 
 #template {
 	display: none;
+}
+
+#userName {
+  height: 39px;
+  margin-left: 0px;
+  width: 200px;
+}
+
+#submit {
+  height: 39px;
 }
 
 .buttons {
@@ -14,14 +25,28 @@
 	display: inline-flex;
 }
 
-.remove, .like {
-    margin: 9px 5px 0px 5px;
+.likeCount {
+  margin: 5px 0px 0px -10px;
+  font-size: 10px;
 }
 
-#newRantBox {
+.header {
+  margin: 10px 0px;
+  border-bottom: 1px solid black;
+}
+
+.remove, .like {
+  margin: 10px 5px 0px 5px;
+}
+
+#newRantBox, #userName {
 	margin-left: 200px;
 }
 
 .jumbotron {
   display: flex;
+}
+
+.like {
+	margin: 10px 0px 0px -10px;
 }

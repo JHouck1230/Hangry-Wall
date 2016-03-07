@@ -12,25 +12,40 @@
 		<script src="main.js"></script>
 	</head>
 	<body>
-			<div class="jumbotron">
-			  <h1>Hangry Wall</h1>
-				<textarea id="newRantBox" cols="100" rows="10"></textarea>
-				<button class="btn btn-info">Submit</button>
-			</div>
+		<div class="jumbotron">
+		  <h1>Hangry Wall</h1>
+			<textarea id="newRantBox" cols="100" rows="5" placeholder="Vent your hangry thoughts here!"></textarea>
+		  <input type="text" id="userName" placeholder="User Name">
+			<button id='submit' class="btn btn-info">Submit</button>
+		</div>
 		<div id='forum' class="container">
 			<div id='template' class="post row">
-				<div class="header col-xs-11 col-sm-11 col-md-11 col-lg-11">
-					<div class="row">
+				<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+					<div class="header row">
 						<div class="author col-xs-8 col-sm-8 col-md-8 col-lg-8"></div>
 						<div class="time col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
 					</div>
-					<div class="row">
+					<div class="content row">
 						<div class="body col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
 					</div>
 				</div>
-					<div class="buttons col-xs-1 col-sm-1 col-md-1 col-lg-1">
-						<button class="like btn btn-primary btn-xs"><span class="glyphicon glyphicon-thumbs-up"></span></button><button class="remove btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></button>
+				<div class="buttons col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<div class="row-fluid">
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+							<button class="like btn btn-success btn-xs">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</button>
+						</div>
+						<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+							<button class="remove btn btn-danger btn-xs">
+								<span class="glyphicon glyphicon-remove"></span>
+							</button>
+ 						</div>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class='likeCount'>0 Likes</div>
+						</div>
 					</div>
+				</div>
 			</div>
 		</div>
 	</body>
